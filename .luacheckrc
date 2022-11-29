@@ -650,6 +650,7 @@ stds.booty_box = {
 		"booty_box",
 	},
 	read_globals = {
+		"default",
 		"fmod",
 		"futil",
 		"flow",
