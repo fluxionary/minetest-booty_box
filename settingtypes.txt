@@ -1,0 +1,5 @@
+# number of inventory slots
+booty_box:size (booty_box size) int 32 1
+
+# privilege needed to configure the booty box
+booty_box:staff_priv (booty_box staff priv) string server

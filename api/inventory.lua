@@ -24,13 +24,13 @@ api.staff_inv_by_player_name_by_hpos = DefaultTable(function(hpos)
 			end,
 
 			allow_put = function(inv, listname, index, stack, player)
-				if check_player_privs(player, settings.priv) then
+				if check_player_privs(player, settings.staff_priv) then
 					return stack:get_count()
 				end
 			end,
 
 			allow_take = function(inv, listname, index, stack, player)
-				if check_player_privs(player, settings.priv) then
+				if check_player_privs(player, settings.staff_priv) then
 					return stack:get_count()
 				end
 			end,

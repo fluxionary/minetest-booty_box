@@ -20,13 +20,13 @@ minetest.register_node("booty_box:box", {
 			return false
 		end
 
-		return minetest.check_player_privs(player, settings.priv)
+		return minetest.check_player_privs(player, settings.staff_priv)
 	end,
 
 	on_blast = function() end,
 
 	on_rightclick = function(pos, node, clicker, itemstack, pointed_thing)
-		if minetest.check_player_privs(clicker, settings.priv) then
+		if minetest.check_player_privs(clicker, settings.staff_priv) then
 			api.show_staff_formspec(pos, clicker)
 		else
 			api.show_player_formspec(pos, clicker)
